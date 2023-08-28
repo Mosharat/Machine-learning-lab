@@ -9,9 +9,12 @@ def function_to_optimize(x):
 search_interval = (0, 31)
 
 # define the genetic algorithm parameters
-population_size = 10
-mutation_rate = 0.1
-generations = 5
+population_size = int(input("Enter the population size: "))
+mutation_rate = float(input("Enter the mutation rate: "))
+generations = int(input("Enter the number of generations: "))
+#population_size = 10
+#mutation_rate = 0.1
+#generations = 5
 
 # define the individual representation and initialization
 def create_individual():
