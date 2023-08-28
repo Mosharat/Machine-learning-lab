@@ -21,9 +21,10 @@ def edit_distance(str1, str2):
 
     return dp[m][n]
 
-# Test the Edit Distance algorithm
-str1 = 'exercised'
-str2 = 'executed'
-distance = edit_distance(str1, str2)
+# Get input from the user
+str1 = input("Enter the first string: ")
+str2 = input("Enter the second string: ")
 
+# Calculate the edit distance and display the result
+distance = edit_distance(str1, str2)
 print(f"The edit distance between '{str1}' and '{str2}' is: {distance}")
